@@ -1,9 +1,19 @@
 @charset "UTF-8";
 
+/* réinitialisation des marges et bordures */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
 	font-size: 12px;
 	font-family: Times, Georgia, sans-serif;
 	background-color: white;
+}
+
+nav {
+	display: block;
 }
 
 #left, #right, nav {
@@ -14,14 +24,13 @@ body {
 	background-color: white;
 }
 
-header, footer {
+.header, .footer {
 	font-style: italic;
 	clear: both;
 	color: white;
 	font-size: 12px;
-	display: flex;
-  	justify-content: center;
-  	align-items: center;
+	text-align: center;
+	padding: 10px; 
 }
 
 #content {
@@ -29,10 +38,9 @@ header, footer {
 }
 
 h1, h2 {
-	margin: 0;
+	margin: 20px;
 	padding: 0;
 	font-weight: normal;
-	text-shadow: none;
 	color: black;
 }
 h1 {
@@ -46,20 +54,18 @@ h2 {
 }
 
 a, a:visited  {
-	color: black !important;
+    color: black !important;
 }
+
+
 
 img.droite, img.gauche {
 	float: none;
 	display: block;
 	clear: both;
-	filter: grayscale(100%);
-	width: 55%;
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 100%;
-	max-height: 100%;
-	box-shadow: none;
+	width: 500px;
 	page-break-before:auto;
 }
 
